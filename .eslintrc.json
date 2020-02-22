@@ -1,0 +1,27 @@
+{
+  "extends": "airbnb-base",
+  "env": {
+     "es6": true,
+     "browser": true,
+     "jest": true
+  },
+  "rules": {
+    "linebreak-style": 0,
+    "global-require": 0,
+    "eol-last": 0,
+    "indent": [1, 2],
+    "no-console": "off",
+    "no-restricted-syntax": [
+      "error",
+      "LabeledStatement",
+      "WithStatement"
+    ],
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "never"
+      }
+    ]
+  }
+}
