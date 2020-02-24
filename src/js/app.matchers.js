@@ -1,7 +1,7 @@
 export default function sortValues(arr) {
-    arr.sort((before, after) => (before.health - after.health));
-    const sortedArr = arr.reverse();
-    return sortedArr;
+  arr.sort((before, after) => (before.health - after.health));
+  const sortedArr = arr.reverse();
+  return sortedArr;
 }
 
 // Дан массив с информацией о героях, например:

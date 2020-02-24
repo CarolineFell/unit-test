@@ -16,6 +16,11 @@
       "LabeledStatement",
       "WithStatement"
     ],
+    "no-restricted-globals": [
+      "error", 
+      "event", 
+      "fdescribe"
+    ],
     "import/extensions": [
       "error",
       "ignorePackages",

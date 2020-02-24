@@ -12,7 +12,8 @@
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
-    "show:dist": "live-server dist"
+    "show:dist": "live-server dist",
+    "prettier": "prettier --write src/**/*.js"
   },
   "author": "coursar",
   "license": "MIT",
@@ -39,6 +40,7 @@
     "core-js": "^3.6.4",
     "lodash": "^4.17.15",
     "mixin-deep": "^2.0.1",
+    "prettier": "^1.19.1",
     "set-value": "^3.0.1"
   },
   "repository": {
