@@ -12,8 +12,8 @@
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist",
-    "lint": "eslint --ignore-path=../../.prettierignore './src/**/*.{js,jsx}'",
-    "prettier": "prettier-eslint --write \"**/*.{js,jsx,json}\"",
+    "lint": "eslint --ignore-path=./.prettierignore.txt dist/**/*.{js,jsx}",
+    "prettier": "prettier-eslint --write \"dist/**/*.{js,jsx,json}\"",
     "precommit": "lint-staged"
   },
   "author": "coursar",
