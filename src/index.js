@@ -1,10 +1,10 @@
-import './css/style.css';
-import './js/app.matchers';
-import './js/app.mocking';
+import "./css/style.css";
+import "./js/matchers.sortValues";
+import "./js/mocking.getLevel";
 
 // TODO: write your code in app.js
 
-import indicateHealth from './js/app';
+import indicateHealth from "./js/mocking.fetchData";
 
-const object = { name: 'Маг', health: 60 };
+const object = { name: "Маг", health: 60 };
 console.log(indicateHealth(object));
