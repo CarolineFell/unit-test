@@ -1,26 +1,22 @@
 {
   "extends": "airbnb-base",
   "env": {
-     "es6": true,
-     "browser": true,
-     "jest": true
+    "es6": true,
+    "browser": true,
+    "jest": true
   },
   "rules": {
+    "extends": ["plugin:prettier/recommended"],
+    "plugins": {
+      "prettier/prettier": "error"
+    },
     "linebreak-style": 0,
     "global-require": 0,
     "eol-last": 0,
     "indent": [1, 2],
     "no-console": "off",
-    "no-restricted-syntax": [
-      "error",
-      "LabeledStatement",
-      "WithStatement"
-    ],
-    "no-restricted-globals": [
-      "error", 
-      "event", 
-      "fdescribe"
-    ],
+    "no-restricted-syntax": ["error", "LabeledStatement", "WithStatement"],
+    "no-restricted-globals": ["error", "event", "fdescribe"],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -28,11 +24,12 @@
         "js": "never"
       }
     ],
-    "no-trailing-spaces": [ 
-      "error", { 
-        "ignoreComments": true, 
+    "no-trailing-spaces": [
+      "error",
+      {
+        "ignoreComments": true,
         "skipBlankLines": true
-      } 
+      }
     ]
   }
 }

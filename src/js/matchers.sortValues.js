@@ -1,19 +1,8 @@
-import sortedArr from '../app.matchers';
-
-test('should sort', () => {
-  const received = sortedArr([
-    { name: 'мечник', health: 10 },
-    { name: 'маг', health: 100 },
-    { name: 'лучник', health: 80 },
-  ]);
-  const expected = [
-    { name: 'маг', health: 100 },
-    { name: 'лучник', health: 80 },
-    { name: 'мечник', health: 10 },
-  ];
-
-  expect(received).toEqual(expected);
-});
+export default function sortValues(arr) {
+  arr.sort((before, after) => before.health - after.health);
+  const sortedArr = arr.reverse();
+  return sortedArr;
+}
 
 // Дан массив с информацией о героях, например:
 

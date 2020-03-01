@@ -6,14 +6,14 @@
   "scripts": {
     "start": "webpack-dev-server --mode development",
     "build": "webpack --mode production",
-    "lint": "eslint .",
     "test": "jest",
     "coverage": "jest --coverage",
     "preshow:coverage": "npm run coverage",
     "show:coverage": "live-server coverage/lcov-report",
     "preshow:dist": "npm run build",
     "show:dist": "live-server dist",
-    "prettier": "prettier --single-quote --use-tabs --trailing-comma es5 --write \"dist/*\"",
+    "lint": "eslint --ignore-path=../../.prettierignore './src/**/*.{js,jsx}'",
+    "prettier": "prettier-eslint --write \"**/*.{js,jsx,json}\"",
     "precommit": "lint-staged"
   },
   "author": "coursar",
